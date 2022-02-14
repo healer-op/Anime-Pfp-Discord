@@ -1,0 +1,20 @@
+{
+  "name": "AnimeJs",
+  "version": "1.0.0",
+  "description": "Basic Ejs GogoAnime Project Using Ejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "cheerio": "^1.0.0-rc.10",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15",
+    "superhero-name-library": "^1.2.2"
+  }
+}

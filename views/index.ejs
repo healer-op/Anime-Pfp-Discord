@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>
+            Anime Pfp
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="healer-op">
+        <meta property="og:image" content="<%= source %>">
+        <meta name="twitter:card" content="<%= source %>">
+        <meta name="description" content="Get Free Anime Pfp Daily Updated" />
+        <link rel="icon" href="<%= source %>" type="image/gif" sizes="16x16">
+        <link href="styles.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <section class="page-section">
+            <div class="container">
+
+                <h2 class="page-section-heading text-center text-uppercase mb-0">Anime Pfp</h2>
+
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div><br>
+                </div>
+
+                <form class="divider-custom" method='GET' action="/">
+                    <div class="form-group">
+                        <img src="<%= source %>">
+                        <button type="submit" class="btn btn-primary btn-block">New Image</button>
+                        <button onclick="window.open('<%= source %>');" class="btn btn-info btn-block">Download</button>
+                        <button onclick="fun();" class="btn btn-success btn-block">Share</button>
+                    </div>
+                </form>
+                <script>
+                    function fun(){
+                        var x = "<%= source %>";
+                        x=x.replace('https://i.pinimg.com/', '');
+                        const search = '/'  
+                        const replacer = new RegExp(search, 'g')
+                        x=x.replace(replacer, '=');
+                        console.log(x);
+                        window.open(`/share/${x}`);
+                    }
+                </script>
+            </div>
+        </section>
+    </body>
+</html>
